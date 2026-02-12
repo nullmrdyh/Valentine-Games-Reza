@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Misi Valentine Reza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui">
+        <div id="start-screen" class="glass-morph">
+            <div class="main-icon">🦊❤️🐰</div>
+            <h1 class="glow-text">Misi bertemu Ainul</h1>
+            <p>Daki 16 tangga tanpa terjatuh.<br>Reza harus bertemu Ainul di puncak!</p>
+            <button id="start-btn" class="btn-glow">MULAI DI SINI SENG</button>
+        </div>
+
+        <div id="hud" style="display: none;">❤️ <span id="score">0</span> / 15</div>
+
+        <div id="win-screen" style="display: none;" class="glass-morph">
+            <div class="win-icon">🦊❤️🐰</div>
+            <h1 class="aesthetic-title glow-text">Happy valentine's Day!</h1>
+            <div class="divider"></div>
+            <p id="valentine-msg">
+                Haiiii lovee <br>
+                Terima kasih telah berusaha selesaikan misi dan bertemu di puncak. <br>
+                berharapka selaluki bersama bagaimanapun rintangannya. <br>
+                terima kasih juga usahanya untuk saya selama ini. <br><br>
+                <span class="signature">Hope better For Both of Us!</span>
+            </p>
+            <button class="btn-glow" onclick="location.reload()">MAIN LAGI</button>
+        </div>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="popSound"><source src="https://assets.mixkit.co/active_storage/sfx/2019/2019-preview.mp3" type="audio/mpeg"></audio>
+    <audio id="jumpSound"><source src="https://assets.mixkit.co/active_storage/sfx/2092/2092-preview.mp3" type="audio/mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
