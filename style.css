@@ -10,8 +10,28 @@ body, html { margin: 0; padding: 0; overflow: hidden; background: #a5d8ff; font-
 .glow-text { color: #ff4d6d; text-shadow: 0 2px 4px rgba(0,0,0,0.1); font-weight: 800; }
 .aesthetic-title { font-family: 'Georgia', serif; font-style: italic; font-size: 32px; margin: 10px 0; }
 .divider { height: 2px; width: 80px; background: #ff4d6d; margin: 15px auto; }
-#valentine-msg { color: #590d22; font-size: 15px; line-height: 1.8; margin-bottom: 25px; }
-.signature { font-weight: bold; font-size: 16px; color: #d63384; }
+#valentine-msg { 
+    color: #590d22; 
+    font-size: 15px; 
+    line-height: 1.6; 
+    text-align: justify;
+}
+
+/* Ini adalah kunci untuk membuat efek TAB di setiap kalimat baru */
+.para {
+    display: block;    /* Membuat kalimat turun ke baris baru */
+    text-indent: 40px; /* Memberikan efek TAB di awal */
+    margin-bottom: 10px; /* Memberikan jarak antar paragraf */
+}
+
+.signature { 
+    font-weight: bold; 
+    font-size: 16px; 
+    color: #d63384; 
+    display: block; 
+    text-align: center; 
+    text-indent: 0; /* Menghilangkan efek tab khusus untuk tanda tangan */
+}
 
 .btn-glow { 
     background: #ff4d6d; color: white; border: none; padding: 15px 35px; 
